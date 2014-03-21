@@ -16,6 +16,7 @@
     <% @ideas.each do |idea| %>
       <% if idea.status=="Published" %>
       <tr>
+      	<td><%= image_tag(@idea.picture_url, :width => 100, :height => 100) if @idea.picture.present? %></td>
         <td><%= idea.name %></td>
         <td><%= idea.description[0..49] %></td>
         <td><%= idea.picture %></td>

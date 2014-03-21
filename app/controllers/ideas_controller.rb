@@ -9,6 +9,7 @@ end
 
   def index
     @ideas = Idea.all
+    @bideas = true
     render 'index'
   end
 

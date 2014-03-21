@@ -1,4 +1,4 @@
-<h1>Listing ideas</h1>
+<h1>Listing drafts</h1>
 
 
      
@@ -9,7 +9,7 @@
      Description
      Picture</li>
     <% @ideas.each do |idea| %>
-      <% if idea.status=="Published" %>
+      <% if idea.status=="Draft" %>
       <li><div>
       	<%= image_tag(idea.picture_url, :width => 50, :height => 50) if idea.picture.present? %>
         <%= idea.name %>

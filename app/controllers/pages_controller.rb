@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
-  def info
+  def drafts
+    @ideas = Idea.all
+    @bdrafts = true
   end
 end

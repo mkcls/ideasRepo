@@ -1,4 +1,5 @@
 Railsgirls::Application.routes.draw do
+  get "pages/drafts"
   devise_for :users
   resources :comments
 
